@@ -1,7 +1,7 @@
 {
   "name": "grunt-ftpush",
   "description": "Incrementally deploy data over the FTP protocol",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "homepage": "https://github.com/climax-media/grunt-ftpush",
   "author": {
     "name": "Terry Rosen",
