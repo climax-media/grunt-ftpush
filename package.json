@@ -2,17 +2,17 @@
   "name": "grunt-ftpush",
   "description": "Incrementally deploy data over the FTP protocol",
   "version": "0.3.3",
-  "homepage": "https://github.com/inossidabile/grunt-ftpush",
+  "homepage": "https://github.com/climax-media/grunt-ftpush",
   "author": {
-    "name": "Boris Staal",
-    "email": "boris@staal.io"
+    "name": "Terry Rosen",
+    "email": "terry.rosen@climaxmedia.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/inossidabile/grunt-ftpush.git"
+    "url": "git://github.com/climax-media/grunt-ftpush.git"
   },
   "bugs": {
-    "url": "https://github.com/inossidabile/grunt-ftpush/issues"
+    "url": "https://github.com/climax-media/grunt-ftpush/issues"
   },
   "engines": {
     "node": "*"
