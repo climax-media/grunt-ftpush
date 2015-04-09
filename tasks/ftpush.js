@@ -85,16 +85,18 @@ module.exports = function(grunt) {
       return grunt.file.write(this.memoryPath, JSON.stringify(this.memory));
     };
 
-    Synchronizer.prototype.prepare = function(callback) {
-      return this.ftp.auth(this.auth.username, this.auth.password, (function(_this) {
-        return function(err) {
-          if (err) {
-            grunt.fatal("Authentication error: " + err);
-          }
-          grunt.log.ok("Authenticated as " + _this.auth.username);
-          return callback();
-        };
-      })(this));
+    Synchronizer.prototype.prepare = function(cb) {
+      var _this = this;
+
+      this.ftp.auth(this.auth.username, this.auth.password, function(err, resp)
+        if (err) {
+          grunt.fatal('Authentication error: ' + err);
+        }
+
+        grunt.log.ok('Authenticated as ' + _this.auth.username);
+
+        if (cb) cb();
+      });
     };
 
     Synchronizer.prototype.sync = function(callback) {
